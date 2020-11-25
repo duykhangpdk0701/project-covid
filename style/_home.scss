@@ -1,0 +1,51 @@
+.home {
+  position: relative;
+  height: 100vh;
+  min-height: 90rem;
+
+  .container-page {
+    margin-left: auto;
+    width: 92%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text-container {
+      .big-text {
+        font-size: 4.5rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .big-text::first-letter {
+        color: #6878fd;
+      }
+
+      .description {
+        font-size: 1.8rem;
+        margin-top: 2.5rem;
+        width: 75%;
+      }
+    }
+  }
+
+  .svg-home {
+    height: 70%;
+  }
+}
+
+.home-circle {
+  position: absolute;
+  z-index: -1;
+}
+
+.home-circle-left {
+  top: 0;
+  left: 0;
+  height: 80%;
+}
+.home-circle-right {
+  right: 5rem;
+  top: 13rem;
+  height: 80%;
+}

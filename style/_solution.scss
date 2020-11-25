@@ -1,0 +1,46 @@
+.solution {
+  position: relative;
+}
+
+.solution__title-container {
+  padding-top: 15rem;
+  margin: auto;
+  width: 70rem;
+  text-align: center;
+
+  .solution__title {
+    font-size: 4rem;
+  }
+  .solution__description {
+    width: 50rem;
+    font-size: 1.6rem;
+    margin: 2rem auto auto;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.solution__card-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 10rem auto 0;
+  padding-bottom: 20rem;
+
+  .solution__card {
+    width: 15rem;
+    text-align: center;
+
+    img {
+      height: 10rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
