@@ -10,12 +10,25 @@
 
   .solution__title {
     font-size: 4rem;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease 0.3s;
   }
   .solution__description {
     width: 50rem;
     font-size: 1.6rem;
     margin: 2rem auto auto;
     color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease 0.3s;
+  }
+
+  .solution-fade-in {
+    opacity: 1;
+    transform: translate(0%);
   }
 }
 
@@ -32,15 +45,32 @@
 
     img {
       height: 10rem;
+      position: relative;
+      opacity: 0;
+      transform: translateY(50%);
+      transition: all 0.5s ease 0.3s;
     }
 
     h1 {
       font-size: 2rem;
       margin: 1rem 0;
+      position: relative;
+      opacity: 0;
+      transform: translateY(50%);
+      transition: all 0.5s ease 0.3s;
     }
 
     p {
       font-size: 1.5rem;
+      position: relative;
+      opacity: 0;
+      transform: translateY(50%);
+      transition: all 0.5s ease 0.3s;
+    }
+
+    .solution-fade-in {
+      opacity: 1;
+      transform: translate(0%);
     }
   }
 }
