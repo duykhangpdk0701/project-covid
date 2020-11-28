@@ -12,7 +12,7 @@
     font-size: 4rem;
     transform: translateY(200%);
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
 
   &__description {
@@ -22,7 +22,7 @@
     color: rgba(0, 0, 0, 0.6);
     transform: translateY(200%);
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
 
   &__description-fade-in {
@@ -57,7 +57,7 @@
       position: relative;
       transform: translateY(50%);
       opacity: 0;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
     }
 
     h1 {
@@ -66,7 +66,7 @@
       position: relative;
       transform: translateY(50%);
       opacity: 0;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
     }
 
     p {
@@ -74,7 +74,7 @@
       position: relative;
       transform: translateY(50%);
       opacity: 0;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
     }
 
     .child-card-fade-in {

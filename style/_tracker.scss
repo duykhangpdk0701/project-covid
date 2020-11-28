@@ -1,4 +1,9 @@
 .tracker {
   height: 100vh;
-  background-color: #F4F7FF;
+  background-color: #f4f7ff;
+
+  .tracker-map {
+    width: 120rem;
+    margin: auto;
+  }
 }

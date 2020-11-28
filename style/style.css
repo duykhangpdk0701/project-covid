@@ -298,8 +298,8 @@ body {
   -webkit-transform: translateY(200%);
           transform: translateY(200%);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .spear__description {
@@ -310,8 +310,8 @@ body {
   -webkit-transform: translateY(200%);
           transform: translateY(200%);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .spear__description-fade-in {
@@ -361,8 +361,8 @@ body {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .spear__card h1 {
@@ -372,8 +372,8 @@ body {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .spear__card p {
@@ -382,8 +382,8 @@ body {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .spear__card .child-card-fade-in {
@@ -394,7 +394,12 @@ body {
 
 .tracker {
   height: 100vh;
-  background-color: #F4F7FF;
+  background-color: #f4f7ff;
+}
+
+.tracker .tracker-map {
+  width: 120rem;
+  margin: auto;
 }
 
 .solution {
