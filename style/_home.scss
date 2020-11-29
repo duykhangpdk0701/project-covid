@@ -13,12 +13,11 @@
 
     .text-container {
       .big-text {
-        position: relative;
         font-size: 4.5rem;
         letter-spacing: 0.2rem;
-        transform: translateY(200%);
-        opacity: 0;
-        transition: all 0.5s ease;
+        position: relative;
+        @include settingForAnimation(5rem);
+        transition-delay: 0.3s;
       }
 
       .big-text::first-letter {
@@ -26,17 +25,14 @@
       }
 
       .description {
-        position: relative;
         font-size: 1.8rem;
         margin-top: 2.5rem;
         width: 75%;
-        transform: translateY(200%);
-        opacity: 0;
-        transition: all 0.5s ease;
+        @include settingForAnimation(5rem);
       }
 
       .text-fade-in {
-        transform: translateY(0%);
+        transform: translateY(0rem);
         opacity: 1;
       }
     }
@@ -44,10 +40,8 @@
 
   .svg-home {
     height: 70%;
-    position: relative;
-    opacity: 0;
-    transform: translateY(10%);
-    transition: all 0.5s ease 0.3s;
+    @include settingForAnimation(5rem);
+    transition-delay: 0.3s;
   }
 
   .svg-fade-in {

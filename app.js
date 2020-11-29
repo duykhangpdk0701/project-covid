@@ -1,5 +1,5 @@
 const fadeInHome = () => {
-  let delay = 0.1;
+  let delay = 0;
   const bigText1 = document.querySelector(".big-text-line-1");
   const bigText2 = document.querySelector(".big-text-line-2");
   const description = document.querySelector(
@@ -47,7 +47,7 @@ const fadeInSpear = () => {
   //fade in img , h1, p
   arr.forEach((item) => {
     if (item[0].getBoundingClientRect().top < screenPosition) {
-      let delay = 0.1;
+      let delay = 0;
       item.forEach((item2) => {
         item2.style.transitionDelay = `${(delay += 0.1)}s`;
         item2.classList.add("child-card-fade-in");
@@ -76,9 +76,9 @@ const fadeInSolution = () => {
 
   arr.forEach((item) => {
     if (item[0].getBoundingClientRect().top < screenPosition) {
-      let delay = 0.1;
+      let delay = 0;
       item.forEach((item2) => {
-        item2.style.transitionDelay = `${(delay += 0.05)}s`;
+        item2.style.transitionDelay = `${(delay += 0.1)}s`;
         item2.classList.add("solution-fade-in");
       });
     }

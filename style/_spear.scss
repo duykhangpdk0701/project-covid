@@ -16,23 +16,20 @@
   }
 
   &__description {
-    position: relative;
     font-size: 1.6rem;
     margin-top: 1rem;
     color: rgba(0, 0, 0, 0.6);
-    transform: translateY(200%);
-    opacity: 0;
-    transition: all 0.3s ease;
+    @include settingForAnimation(5rem);
   }
 
   &__description-fade-in {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(0rem);
   }
 
   &__title-fade-in {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(0rem);
   }
 
   &__card-container {
@@ -54,32 +51,23 @@
 
     img {
       height: 10rem;
-      position: relative;
-      transform: translateY(50%);
-      opacity: 0;
-      transition: all 0.3s ease;
+      @include settingForAnimation(5rem);
     }
 
     h1 {
       font-size: 2rem;
       margin: 1rem 0;
-      position: relative;
-      transform: translateY(50%);
-      opacity: 0;
-      transition: all 0.3s ease;
+      @include settingForAnimation(5rem);
     }
 
     p {
       font-size: 1.5rem;
-      position: relative;
-      transform: translateY(50%);
-      opacity: 0;
-      transition: all 0.3s ease;
+      @include settingForAnimation(5rem);
     }
 
     .child-card-fade-in {
       opacity: 1;
-      transform: translateY(0%);
+      transform: translateY(0rem);
     }
   }
 }

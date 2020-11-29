@@ -10,20 +10,14 @@
 
   .solution__title {
     font-size: 4rem;
-    position: relative;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.5s ease 0.3s;
+    @include settingForAnimation(5rem);
   }
   .solution__description {
     width: 50rem;
     font-size: 1.6rem;
     margin: 2rem auto auto;
     color: rgba(0, 0, 0, 0.6);
-    position: relative;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.5s ease 0.3s;
+    @include settingForAnimation(5rem);
   }
 
   .solution-fade-in {
@@ -45,27 +39,18 @@
 
     img {
       height: 10rem;
-      position: relative;
-      opacity: 0;
-      transform: translateY(50%);
-      transition: all 0.5s ease 0.3s;
+      @include settingForAnimation(5rem);
     }
 
     h1 {
       font-size: 2rem;
       margin: 1rem 0;
-      position: relative;
-      opacity: 0;
-      transform: translateY(50%);
-      transition: all 0.5s ease 0.3s;
+      @include settingForAnimation(5rem);
     }
 
     p {
       font-size: 1.5rem;
-      position: relative;
-      opacity: 0;
-      transform: translateY(50%);
-      transition: all 0.5s ease 0.3s;
+      @include settingForAnimation(5rem);
     }
 
     .solution-fade-in {

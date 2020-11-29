@@ -219,14 +219,17 @@ body {
 }
 
 .home .container-page .text-container .big-text {
-  position: relative;
   font-size: 4.5rem;
   letter-spacing: 0.2rem;
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
+  position: relative;
+  position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .home .container-page .text-container .big-text::first-letter {
@@ -234,31 +237,33 @@ body {
 }
 
 .home .container-page .text-container .description {
-  position: relative;
   font-size: 1.8rem;
   margin-top: 2.5rem;
   width: 75%;
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
+  position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .home .container-page .text-container .text-fade-in {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
   opacity: 1;
 }
 
 .home .svg-home {
   height: 70%;
   position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
-  -webkit-transition: all 0.5s ease 0.3s;
-  transition: all 0.5s ease 0.3s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .home .svg-fade-in {
@@ -303,27 +308,27 @@ body {
 }
 
 .spear__description {
-  position: relative;
   font-size: 1.6rem;
   margin-top: 1rem;
   color: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
+  position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .spear__description-fade-in {
   opacity: 1;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
 }
 
 .spear__title-fade-in {
   opacity: 1;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
 }
 
 .spear__card-container {
@@ -358,38 +363,38 @@ body {
 .spear__card img {
   height: 10rem;
   position: relative;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .spear__card h1 {
   font-size: 2rem;
   margin: 1rem 0;
   position: relative;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .spear__card p {
   font-size: 1.5rem;
   position: relative;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .spear__card .child-card-fade-in {
   opacity: 1;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
 }
 
 .tracker {
@@ -416,11 +421,11 @@ body {
 .solution__title-container .solution__title {
   font-size: 4rem;
   position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: all 0.5s ease 0.3s;
-  transition: all 0.5s ease 0.3s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .solution__title-container .solution__description {
@@ -429,11 +434,11 @@ body {
   margin: 2rem auto auto;
   color: rgba(0, 0, 0, 0.6);
   position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: all 0.5s ease 0.3s;
-  transition: all 0.5s ease 0.3s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .solution__title-container .solution-fade-in {
@@ -462,32 +467,32 @@ body {
 .solution__card-container .solution__card img {
   height: 10rem;
   position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: all 0.5s ease 0.3s;
-  transition: all 0.5s ease 0.3s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .solution__card-container .solution__card h1 {
   font-size: 2rem;
   margin: 1rem 0;
   position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: all 0.5s ease 0.3s;
-  transition: all 0.5s ease 0.3s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .solution__card-container .solution__card p {
   font-size: 1.5rem;
   position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: all 0.5s ease 0.3s;
-  transition: all 0.5s ease 0.3s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .solution__card-container .solution__card .solution-fade-in {
