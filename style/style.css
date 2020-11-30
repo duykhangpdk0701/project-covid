@@ -14,6 +14,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #181a2b;
 }
 
 .loading-page {
@@ -292,28 +293,33 @@ body {
   height: 80%;
 }
 
+.spear {
+  position: relative;
+  background-color: #1a2336;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10rem 10rem;
+}
+
 .spear__title-container {
-  width: 35%;
+  width: 70rem;
   text-align: center;
   margin: auto;
-  padding-top: 3rem;
 }
 
 .spear__title {
-  position: relative;
-  margin-top: 10rem;
   font-size: 4rem;
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
+  position: relative;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .spear__description {
   font-size: 1.6rem;
   margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   position: relative;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
@@ -339,7 +345,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 70%;
-  margin: 5rem auto;
+  margin: 7rem auto 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -357,7 +363,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 4rem;
+  padding: 0 4rem;
   border-radius: 2.5rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -386,6 +392,7 @@ body {
 
 .spear__card p {
   font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
   position: relative;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
@@ -402,7 +409,6 @@ body {
 
 .tracker {
   height: 100vh;
-  background-color: #f4f7ff;
 }
 
 .tracker .tracker-map {
@@ -412,10 +418,12 @@ body {
 
 .solution {
   position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #1a2336;
+  padding: 10rem 0;
 }
 
 .solution__title-container {
-  padding-top: 15rem;
   margin: auto;
   width: 70rem;
   text-align: center;
@@ -434,8 +442,8 @@ body {
 .solution__title-container .solution__description {
   width: 50rem;
   font-size: 1.6rem;
-  margin: 2rem auto auto;
-  color: rgba(0, 0, 0, 0.6);
+  margin: 1.5rem auto auto;
+  color: rgba(255, 255, 255, 0.6);
   position: relative;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
@@ -458,8 +466,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 80%;
-  margin: 10rem auto 0;
-  padding-bottom: 20rem;
+  margin: 5rem auto;
 }
 
 .solution__card-container .solution__card {
@@ -490,6 +497,7 @@ body {
 
 .solution__card-container .solution__card p {
   font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
   position: relative;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
@@ -502,6 +510,10 @@ body {
   opacity: 1;
   -webkit-transform: translate(0%);
           transform: translate(0%);
+}
+
+.contact-form {
+  height: 100vh;
 }
 
 .footer {

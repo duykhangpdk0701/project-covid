@@ -1,9 +1,11 @@
 .solution {
   position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #1a2336;
+  padding: 10rem 0;
 }
 
 .solution__title-container {
-  padding-top: 15rem;
   margin: auto;
   width: 70rem;
   text-align: center;
@@ -15,8 +17,8 @@
   .solution__description {
     width: 50rem;
     font-size: 1.6rem;
-    margin: 2rem auto auto;
-    color: rgba(0, 0, 0, 0.6);
+    margin: 1.5rem auto auto;
+    color: rgba(255, 255, 255, 0.6);
     @include settingForAnimation(5rem);
   }
 
@@ -30,8 +32,7 @@
   display: flex;
   justify-content: space-evenly;
   width: 80%;
-  margin: 10rem auto 0;
-  padding-bottom: 20rem;
+  margin: 5rem auto;
 
   .solution__card {
     width: 15rem;
@@ -50,6 +51,7 @@
 
     p {
       font-size: 1.5rem;
+      color: rgba(255, 255, 255, 0.6);
       @include settingForAnimation(5rem);
     }
 

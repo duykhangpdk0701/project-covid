@@ -21,6 +21,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #181a2b;
 }
 
 @import "./loadingPage";
@@ -29,4 +30,5 @@ body {
 @import "./spear";
 @import "./tracker";
 @import "./solution";
+@import "./contact";
 @import "./footer";
