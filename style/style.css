@@ -292,12 +292,6 @@ body {
   height: 80%;
 }
 
-.home-circle-right {
-  right: 5rem;
-  top: 13rem;
-  height: 80%;
-}
-
 .spear__title-container {
   width: 35%;
   text-align: center;
@@ -511,7 +505,7 @@ body {
 }
 
 .footer {
-  height: 40rem;
+  height: 30rem;
   width: 100%;
   background: url("../asset/footer.svg");
   background-repeat: no-repeat;
@@ -534,7 +528,26 @@ body {
           align-items: center;
 }
 
-.footer .footer-container div {
-  height: 10;
+.footer .footer-container div h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-container div p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.footer .footer-container div .contact a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  position: relative;
+}
+
+.footer .footer-container div .contact a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

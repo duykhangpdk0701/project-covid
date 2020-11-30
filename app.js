@@ -91,9 +91,7 @@ const fadeInSolution = () => {
   });
 };
 
-const fletchAPI = () => {
-  fl;
-};
+const fletchAPI = () => {};
 
 const windowScrollEvent = () => {
   window.addEventListener("scroll", () => {
