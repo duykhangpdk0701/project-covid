@@ -1,0 +1,57 @@
+.loading-page {
+  position: absolute;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  &__container {
+    position: relative;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 70%;
+    animation: rotateIcon 2s linear infinite;
+  }
+
+  &__text {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    animation: opacityText 2s linear infinite;
+  }
+}
+
+.loading-page-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opacityText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
