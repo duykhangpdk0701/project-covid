@@ -17,8 +17,14 @@ const fadeInHome = () => {
 const preLoading = () => {
   window.addEventListener("load", () => {
     const loadingPage = document.querySelector(".loading-page");
+    const navbar = document.querySelector(".nav");
     loadingPage.classList.add("loading-page-finish");
     fadeInHome();
+    navbar.classList.add("nav-active");
+
+    navbar.addEventListener("transitionend", () => {
+      navbar.style.transitionDelay = "0s";
+    });
   });
 };
 
@@ -83,6 +89,10 @@ const fadeInSolution = () => {
       });
     }
   });
+};
+
+const fletchAPI = () => {
+  fl;
 };
 
 const windowScrollEvent = () => {

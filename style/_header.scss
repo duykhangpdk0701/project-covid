@@ -9,7 +9,9 @@
   align-items: center;
   font-weight: 500;
   transition: all ease 0.3s;
+  transition-delay: 0.3s;
   z-index: 99;
+  transform: translateY(-11vh);
 
   &__logo {
     font-size: 2.8rem;
@@ -55,6 +57,10 @@
       transition: all ease 0.3s;
     }
   }
+}
+
+.nav-active {
+  transform: translateY(0vh);
 }
 
 .nav-sticky {
