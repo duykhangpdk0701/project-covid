@@ -522,7 +522,106 @@ body {
   background-color: #51c666;
 }
 
-.tracker .tracker-map {
+.tracker-board {
+  max-width: 100rem;
+  height: 70rem;
+  margin: 10rem auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+.tracker-board .tracker-board-content-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.tracker-board .tracker-board-content-table th,
+.tracker-board .tracker-board-content-table td {
+  padding: 1.2rem 1.5rem;
+}
+
+.tracker-board .tracker-board-content-table thead tr {
+  padding: 2rem 0;
+  font-weight: bold;
+}
+
+.tracker-board .tracker-board-content-table thead tr th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: #1a2336;
+}
+
+.tracker-board .tracker-board-content-table thead tr th:nth-child(3) {
+  background-color: #247ce5;
+  text-align: center;
+}
+
+.tracker-board .tracker-board-content-table thead tr th:nth-child(4) {
+  background-color: #fd5238;
+  text-align: center;
+}
+
+.tracker-board .tracker-board-content-table thead tr th:nth-child(5) {
+  background-color: #51c666;
+  text-align: center;
+}
+
+.tracker-board .tracker-board-content-table tbody tr {
+  padding: 0.5rem 0;
+  font-weight: 100;
+  border: 0.1rem solid #dddddd;
+}
+
+.tracker-board .tracker-board-content-table tbody tr td:nth-child(2) {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tracker-board .tracker-board-content-table tbody tr td:nth-child(1) {
+  width: 0.1rem;
+  padding-right: 0;
+}
+
+.tracker-board .tracker-board-content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tracker-board .tracker-board-content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1a2336;
+}
+
+.tracker-board .tracker-board-content-table tbody tr td:nth-child(3) {
+  text-align: center;
+}
+
+.tracker-board .tracker-board-content-table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+
+.tracker-board .tracker-board-content-table tbody tr td:nth-child(5) {
+  text-align: center;
+}
+
+.tracker-board .tracker-board-content-table tbody tr td .flag-icon {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.tracker-map {
   max-width: 120rem;
   margin: auto;
 }

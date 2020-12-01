@@ -91,7 +91,68 @@ const fadeInSolution = () => {
   });
 };
 
-const fletchAPI = () => {};
+const renderCovidGlobal = (data) => {
+  const globalCases = document.querySelector(".global-cases");
+  const globalDead = document.querySelector(".global-dead");
+  const globalRecover = document.querySelector(".global-recover");
+
+  globalCases.textContent = data.TotalConfirmed;
+  globalDead.textContent = data.TotalDeaths;
+  globalRecover.textContent = data.TotalRecovered;
+};
+
+const renderCovidCountryFirstTime = (data) => {
+  const iconFlag = document.querySelector(".tracker-icon-flag");
+  const countryName = document.querySelector(".tracker-country-name");
+  const countryCases = document.querySelector(".country-cases");
+  const countryDead = document.querySelector(".country-dead");
+  const countryRecover = document.querySelector(".country-recover");
+
+  data.forEach((item) => {
+    if (item.Country === "Viet Nam") {
+      iconFlag.setAttribute(
+        "src",
+        `https://www.countryflags.io/${item.CountryCode.toLowerCase()}/flat/64.png`
+      );
+      countryName.textContent = item.Country;
+      countryCases.textContent = item.TotalConfirmed;
+      countryDead.textContent = item.TotalDeaths;
+      countryRecover.textContent = item.TotalRecovered;
+    }
+  });
+};
+
+const sortData = (data) => {
+  data.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed);
+};
+
+const renderCovidTable = (data) => {
+  const cardLine = document.querySelector(".tracker-board-content-table tbody");
+  sortData(data);
+
+  data.forEach((item, index) => {
+    cardLine.innerHTML += `
+    <tr>
+      <td>${index + 1}</td>
+      <td><img class="flag-icon" src="https://www.countryflags.io/${
+        item.CountryCode
+      }/flat/64.png">${item.Country}</td>
+      <td>${item.TotalConfirmed}</td>
+      <td>${item.TotalDeaths}</td>
+      <td>${item.TotalRecovered}</td>
+    </tr>`;
+  });
+};
+
+const getData = () => {
+  fetch("https://api.covid19api.com/summary")
+    .then((res) => res.json())
+    .then((data) => {
+      renderCovidGlobal(data.Global);
+      renderCovidCountryFirstTime(data.Countries);
+      renderCovidTable(data.Countries);
+    });
+};
 
 const windowScrollEvent = () => {
   window.addEventListener("scroll", () => {
@@ -104,6 +165,7 @@ const windowScrollEvent = () => {
 const app = () => {
   preLoading();
   windowScrollEvent();
+  getData();
 };
 
 app();
