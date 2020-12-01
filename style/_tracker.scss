@@ -1,8 +1,83 @@
 .tracker {
-  height: 100vh;
+  padding: 15rem 0;
+
+  &__info {
+    margin: auto;
+    max-width: 100rem;
+
+    &__title {
+      margin: 0 0 2rem 2rem;
+      font-size: 2.5rem;
+      display: flex;
+      justify-content: baseline;
+
+      .icon {
+        color: #6c63ff;
+      }
+    }
+
+    &__container {
+      width: 100%;
+      border-radius: 3rem;
+      box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6rem;
+      margin-bottom: 5rem;
+
+      &__card {
+        height: 10rem;
+        width: 25rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__aside {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 1rem;
+        }
+
+        &__text {
+          font-size: 1.5rem;
+        }
+
+        &__number {
+          font-size: 2.2rem;
+          font-weight: 900;
+        }
+      }
+
+      &__card:nth-of-type(1) {
+        background-color: #ddecfe;
+        div {
+          background-color: #247ce5;
+        }
+      }
+
+      &__card:nth-of-type(2) {
+        background-color: #ffe9e6;
+        div {
+          background-color: #fd5238;
+        }
+      }
+
+      &__card:nth-of-type(3) {
+        background-color: #eef9e8;
+        div {
+          background-color: #51c666;
+        }
+      }
+    }
+  }
 
   .tracker-map {
-    width: 120rem;
+    max-width: 120rem;
     margin: auto;
   }
 }

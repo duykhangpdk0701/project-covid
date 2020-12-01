@@ -17,6 +17,19 @@ body {
   color: #181a2b;
 }
 
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
+}
+
 .loading-page {
   position: fixed;
   z-index: 999;
@@ -408,11 +421,109 @@ body {
 }
 
 .tracker {
-  height: 100vh;
+  padding: 15rem 0;
+}
+
+.tracker__info {
+  margin: auto;
+  max-width: 100rem;
+}
+
+.tracker__info__title {
+  margin: 0 0 2rem 2rem;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.tracker__info__title .icon {
+  color: #6c63ff;
+}
+
+.tracker__info__container {
+  width: 100%;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem;
+  margin-bottom: 5rem;
+}
+
+.tracker__info__container__card {
+  height: 10rem;
+  width: 25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tracker__info__container__card__aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1rem;
+}
+
+.tracker__info__container__card__text {
+  font-size: 1.5rem;
+}
+
+.tracker__info__container__card__number {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.tracker__info__container__card:nth-of-type(1) {
+  background-color: #ddecfe;
+}
+
+.tracker__info__container__card:nth-of-type(1) div {
+  background-color: #247ce5;
+}
+
+.tracker__info__container__card:nth-of-type(2) {
+  background-color: #ffe9e6;
+}
+
+.tracker__info__container__card:nth-of-type(2) div {
+  background-color: #fd5238;
+}
+
+.tracker__info__container__card:nth-of-type(3) {
+  background-color: #eef9e8;
+}
+
+.tracker__info__container__card:nth-of-type(3) div {
+  background-color: #51c666;
 }
 
 .tracker .tracker-map {
-  width: 120rem;
+  max-width: 120rem;
   margin: auto;
 }
 
