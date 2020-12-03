@@ -115,9 +115,9 @@ const renderCovidCountryFirstTime = (data) => {
         `https://www.countryflags.io/${item.CountryCode.toLowerCase()}/flat/64.png`
       );
       countryName.textContent = item.Country;
-      countryCases.textContent = item.TotalConfirmed;
-      countryDead.textContent = item.TotalDeaths;
-      countryRecover.textContent = item.TotalRecovered;
+      countryCases.textContent = item.TotalConfirmed.toLocaleString();
+      countryDead.textContent = item.TotalDeaths.toLocaleString();
+      countryRecover.textContent = item.TotalRecovered.toLocaleString();
     }
   });
 };
@@ -126,9 +126,24 @@ const sortData = (data) => {
   data.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed);
 };
 
+const formatDataCountries = (data) => {
+  data.forEach((item) => {
+    item.TotalConfirmed = item.TotalConfirmed.toLocaleString();
+    item.TotalDeaths = item.TotalDeaths.toLocaleString();
+    item.TotalRecovered = item.TotalRecovered.toLocaleString();
+  });
+};
+
+const formatDataGlobal = (data) => {
+  data.TotalConfirmed = data.TotalConfirmed.toLocaleString();
+  data.TotalDeaths = data.TotalDeaths.toLocaleString();
+  data.TotalRecovered = data.TotalRecovered.toLocaleString();
+};
+
 const renderCovidTable = (data) => {
   const cardLine = document.querySelector(".tracker-board-content-table tbody");
   sortData(data);
+  formatDataCountries(data);
 
   data.forEach((item, index) => {
     cardLine.innerHTML += `
@@ -148,6 +163,7 @@ const getData = () => {
   fetch("https://api.covid19api.com/summary")
     .then((res) => res.json())
     .then((data) => {
+      formatDataGlobal(data.Global);
       renderCovidGlobal(data.Global);
       renderCovidCountryFirstTime(data.Countries);
       renderCovidTable(data.Countries);
