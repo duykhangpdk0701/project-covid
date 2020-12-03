@@ -48,27 +48,24 @@
     padding: 0 4rem;
     border-radius: 2.5rem;
     transition: all 0.2s ease;
+    @include settingForAnimation(5rem);
 
     img {
       height: 10rem;
-      @include settingForAnimation(5rem);
     }
 
     h1 {
       font-size: 2rem;
       margin: 1rem 0;
-      @include settingForAnimation(5rem);
     }
 
     p {
       font-size: 1.5rem;
       color: rgba(255, 255, 255, 0.6);
-      @include settingForAnimation(5rem);
     }
-
-    .child-card-fade-in {
-      opacity: 1;
-      transform: translateY(0rem);
-    }
+  }
+  .spear-card-fade-in {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }

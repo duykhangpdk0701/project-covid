@@ -37,11 +37,8 @@ const fadeInSpear = () => {
   const screenPosition = window.innerHeight / 1.2;
   const spearTitle = document.querySelector(".spear__title");
   const spearDescription = document.querySelector(".spear__description");
-  const arr = [
-    document.querySelectorAll(".spear__card img"),
-    document.querySelectorAll(".spear__card h1"),
-    document.querySelectorAll(".spear__card p"),
-  ];
+  const spearCard = document.querySelectorAll(".spear__card");
+  let delay = 0;
   //fade in title
   if (spearTitle.getBoundingClientRect().top < screenPosition) {
     spearTitle.classList.add("spear__title-fade-in");
@@ -50,14 +47,11 @@ const fadeInSpear = () => {
   if (spearDescription.getBoundingClientRect().top < screenPosition) {
     spearDescription.classList.add("spear__description-fade-in");
   }
-  //fade in img , h1, p
-  arr.forEach((item) => {
-    if (item[0].getBoundingClientRect().top < screenPosition) {
-      let delay = 0;
-      item.forEach((item2) => {
-        item2.style.transitionDelay = `${(delay += 0.1)}s`;
-        item2.classList.add("child-card-fade-in");
-      });
+  //fade in each of card
+  spearCard.forEach((item) => {
+    if (item.getBoundingClientRect().top < screenPosition) {
+      item.style.transitionDelay = `${(delay += 0.1)}s`;
+      item.classList.add("spear-card-fade-in");
     }
   });
 };
@@ -66,27 +60,22 @@ const fadeInSolution = () => {
   const screenPosition = window.innerHeight / 1.2;
   const solutionTitle = document.querySelector(".solution__title");
   const solutionDescription = document.querySelector(".solution__description");
-  const arr = [
-    document.querySelectorAll(".solution__card img"),
-    document.querySelectorAll(".solution__card h1"),
-    document.querySelectorAll(".solution__card p"),
-  ];
+  const solutionCard = document.querySelectorAll(".solution__card");
+  let delay = 0;
 
+  //fade in title
   if (solutionTitle.getBoundingClientRect().top < screenPosition) {
     solutionTitle.classList.add("solution-fade-in");
   }
-
+  //fade in description
   if (solutionDescription.getBoundingClientRect().top < screenPosition) {
     solutionDescription.classList.add("solution-fade-in");
   }
-
-  arr.forEach((item) => {
-    if (item[0].getBoundingClientRect().top < screenPosition) {
-      let delay = 0;
-      item.forEach((item2) => {
-        item2.style.transitionDelay = `${(delay += 0.1)}s`;
-        item2.classList.add("solution-fade-in");
-      });
+  //fade in each of card
+  solutionCard.forEach((item) => {
+    if (item.getBoundingClientRect().top < screenPosition) {
+      item.style.transitionDelay = `${(delay += 0.1)}s`;
+      item.classList.add("solution-fade-in");
     }
   });
 };

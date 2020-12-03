@@ -380,41 +380,29 @@ body {
   border-radius: 2.5rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-}
-
-.spear__card img {
-  height: 10rem;
   position: relative;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
   opacity: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.spear__card img {
+  height: 10rem;
 }
 
 .spear__card h1 {
   font-size: 2rem;
   margin: 1rem 0;
-  position: relative;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 .spear__card p {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
-  position: relative;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
-.spear__card .child-card-fade-in {
+.spear .spear-card-fade-in {
   opacity: 1;
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
@@ -682,41 +670,29 @@ body {
 .solution__card-container .solution__card {
   width: 15rem;
   text-align: center;
-}
-
-.solution__card-container .solution__card img {
-  height: 10rem;
   position: relative;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
   opacity: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.solution__card-container .solution__card img {
+  height: 10rem;
 }
 
 .solution__card-container .solution__card h1 {
   font-size: 2rem;
   margin: 1rem 0;
-  position: relative;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 .solution__card-container .solution__card p {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
-  position: relative;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
-.solution__card-container .solution__card .solution-fade-in {
+.solution__card-container .solution-fade-in {
   opacity: 1;
   -webkit-transform: translate(0%);
           transform: translate(0%);
@@ -724,6 +700,185 @@ body {
 
 .contact-form {
   height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+}
+
+.contact-form .contact-container {
+  height: 60rem;
+  width: 110rem;
+  position: relative;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo {
+  color: white;
+  height: 40rem;
+  width: 35rem;
+  padding: 4rem;
+  background-color: #1a2336;
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  top: 50%;
+  left: 0;
+  -webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo {
+  height: 90%;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo ul {
+  list-style: none;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo ul li {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo ul li a {
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo ul li a .contact-contactInfo-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo ul li a:hover {
+  opacity: 0.7;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-info-icon-contanier {
+  height: 10%;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-info-icon-contanier a {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.contact-form .contact-container .contact-container-fixedInfo .contact-info-icon-contanier a:hover {
+  opacity: 0.7;
+}
+
+.contact-form .contact-container .contact-container-form {
+  margin-left: auto;
+  padding: 3rem 3rem 3rem 22rem;
+  width: 92.5rem;
+  height: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .contact-container .contact-container-form h2 {
+  color: #1a2336;
+  font-size: 2.5rem;
+}
+
+.contact-form .contact-container .contact-container-form-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+.contact-form .contact-container .contact-container-form .contact-form-inputbox {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.contact-form .contact-container .contact-container-form .contact-form-inputbox input,
+.contact-form .contact-container .contact-container-form .contact-form-inputbox textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  border: none;
+  color: #1a2336;
+  border-bottom: 0.1rem solid #1a2336;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .contact-container .contact-container-form .contact-form-inputbox textarea {
+  min-height: 12rem;
+}
+
+.contact-form .contact-container .contact-container-form .contact-form-inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #1a2336;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.contact-form .contact-container .contact-container-form .contact-form-inputbox input:focus ~ span,
+.contact-form .contact-container .contact-container-form .contact-form-inputbox textarea:focus ~ span,
+.contact-form .contact-container .contact-container-form .contact-form-inputbox input:valid ~ span,
+.contact-form .contact-container .contact-container-form .contact-form-inputbox textarea:valid ~ span {
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #6878fd;
+}
+
+.contact-form .contact-container .contact-container-form .contact-form-inputbox input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #1a2336;
+  max-width: 15rem;
+  padding: 1.2rem;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-form .contact-container .contact-container-form .contact-form-inputbox input[type="submit"]:hover {
+  background-color: #6878fd;
+}
+
+.contact-form .contact-container .contact-container-form .w50 {
+  width: 47%;
+}
+
+.contact-form .contact-container .contact-container-form .w100 {
+  width: 100%;
 }
 
 .footer {
@@ -758,18 +913,6 @@ body {
 .footer .footer-container div p {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 0.5rem;
-}
-
-.footer .footer-container div .contact a {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  position: relative;
-}
-
-.footer .footer-container div .contact a:hover {
-  color: rgba(255, 255, 255, 0.5);
-  bottom: 0.2rem;
   margin-bottom: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

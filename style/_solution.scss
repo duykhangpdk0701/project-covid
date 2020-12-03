@@ -37,27 +37,23 @@
   .solution__card {
     width: 15rem;
     text-align: center;
-
+    @include settingForAnimation(5rem);
     img {
       height: 10rem;
-      @include settingForAnimation(5rem);
     }
 
     h1 {
       font-size: 2rem;
       margin: 1rem 0;
-      @include settingForAnimation(5rem);
     }
 
     p {
       font-size: 1.5rem;
       color: rgba(255, 255, 255, 0.6);
-      @include settingForAnimation(5rem);
     }
-
-    .solution-fade-in {
-      opacity: 1;
-      transform: translate(0%);
-    }
+  }
+  .solution-fade-in {
+    opacity: 1;
+    transform: translate(0%);
   }
 }

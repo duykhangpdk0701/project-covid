@@ -14,31 +14,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    div{
-      h1{
+    div {
+      h1 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
       }
-      p{
+      p {
         font-size: 1.5rem;
         color: rgba(255, 255, 255, 0.7);
         margin-bottom: 0.5rem;
       }
-      .contact{
-        a{
-          color: rgba(255, 255, 255,0.7);
-          text-decoration: none;
-          position: relative;
-        }
-        a:hover{
-          color: rgba(255, 255, 255,0.5);
-          bottom: 0.2rem;
-          margin-bottom: 0.5rem;
-        }
-      }
     }
-    
   }
-
 }
-
