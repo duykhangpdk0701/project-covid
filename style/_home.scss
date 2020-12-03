@@ -60,3 +60,41 @@
   left: 0;
   height: 80%;
 }
+
+@media screen and(max-width: 1600px) {
+  .home-circle {
+    display: none;
+  }
+}
+
+@media screen and(max-width: 1150px) {
+  .container-page {
+    flex-direction: column;
+    height: auto;
+
+    .text-container {
+      text-align: center;
+      margin-top: 20rem;
+
+      .description {
+        margin: 2rem auto;
+        width: 100% !important;
+      }
+    }
+
+    .svg-home {
+      position: absolute;
+      height: 50%;
+
+      top: 65%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media screen and(max-width: 700px) {
+  .svg-home {
+    height: 30% !important;
+  }
+}

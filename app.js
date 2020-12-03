@@ -103,7 +103,7 @@ const renderCovidCountryFirstTime = (data) => {
         "src",
         `https://www.countryflags.io/${item.CountryCode.toLowerCase()}/flat/64.png`
       );
-      countryName.textContent = item.Country;
+      countryName.textContent = "Việt Nam";
       countryCases.textContent = item.TotalConfirmed.toLocaleString();
       countryDead.textContent = item.TotalDeaths.toLocaleString();
       countryRecover.textContent = item.TotalRecovered.toLocaleString();

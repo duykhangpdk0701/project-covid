@@ -9,10 +9,17 @@
       margin: 0 0 2rem 2rem;
       font-size: 2.5rem;
       display: flex;
-      justify-content: baseline;
+      align-items: center;
 
       .icon {
         color: #6c63ff;
+        font-size: 3rem;
+        margin-right: 1rem;
+      }
+
+      img {
+        height: 5rem;
+        margin-right: 1rem;
       }
     }
 
