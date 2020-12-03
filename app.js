@@ -28,6 +28,39 @@ const preLoading = () => {
   });
 };
 
+const navSlide = () => {
+  const hamburger = document.querySelector(".nav__hamburger");
+  const nav = document.querySelector(".nav__ul");
+  const navLinks = document.querySelectorAll(".nav__ul li");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("nav-ul-active");
+
+    navLinks.forEach((item, index) => {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.3
+        }s`;
+      }
+    });
+    hamburger.classList.toggle("toggle");
+  });
+
+  navLinks.forEach((item) => {
+    item.addEventListener("click", () => {
+      nav.classList.remove("nav-ul-active");
+      hamburger.classList.remove("toggle");
+      navLinks.forEach((item2) => {
+        if (item2.style.animation) {
+          item2.style.animation = "";
+        }
+      });
+    });
+  });
+};
+
 const stickyHeader = () => {
   const nav = document.querySelector(".nav");
   nav.classList.toggle("nav-sticky", window.scrollY > 0);
@@ -169,7 +202,9 @@ const windowScrollEvent = () => {
 
 const app = () => {
   preLoading();
+  navSlide();
   windowScrollEvent();
+
   getData();
 };
 

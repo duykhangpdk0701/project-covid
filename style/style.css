@@ -173,12 +173,16 @@ body {
 
 .nav__ul {
   list-style: none;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 35%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
   margin-right: 5%;
   font-size: 1.7rem;
 }
@@ -219,6 +223,83 @@ body {
   height: 8vh;
   -webkit-box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
           box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1150px) {
+  .nav__ul {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .nav__ul {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav__ul li {
+    opacity: 0;
+  }
+  .nav__hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-ul-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .home {
@@ -587,7 +668,7 @@ body {
   height: 70rem;
   margin: 10rem auto;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
   border-radius: 0.5rem 0.5rem 0 0;
   -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
