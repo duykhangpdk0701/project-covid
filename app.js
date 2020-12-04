@@ -25,6 +25,11 @@ const preLoading = () => {
     navbar.addEventListener("transitionend", () => {
       navbar.style.transitionDelay = "0s";
     });
+
+    //when the loading page finish remove all loading page to improve performers
+    loadingPage.addEventListener("transitionend", () => {
+      loadingPage.remove();
+    });
   });
 };
 
@@ -47,7 +52,7 @@ const navSlide = () => {
     });
     hamburger.classList.toggle("toggle");
   });
-
+  //when you click any  ul li it will screen before click hamburger
   navLinks.forEach((item) => {
     item.addEventListener("click", () => {
       nav.classList.remove("nav-ul-active");

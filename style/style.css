@@ -593,14 +593,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 6rem;
   margin-bottom: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tracker__info__container__card {
@@ -620,6 +621,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1rem;
 }
 
 .tracker__info__container__card__aside {
@@ -912,6 +914,7 @@ body {
   left: 0;
   -webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .contact-form .contact-container .contact-container-fixedInfo .contact-contactInfo {
@@ -1060,6 +1063,62 @@ body {
 
 .contact-form .contact-container .contact-container-form .w100 {
   width: 100%;
+}
+
+@media screen and (max-width: 1130px) {
+  .contact-container-form {
+    text-align: center;
+  }
+  .contact-container-form-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-container-form .w100 {
+    width: 47% !important;
+  }
+  .contact-form-inputbox input[type="submit"] {
+    margin-top: -2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-form {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 3rem;
+  }
+  .contact-container-form {
+    padding: 3rem !important;
+  }
+  .contact-container-form .w100,
+  .contact-container-form .w50 {
+    width: 100% !important;
+  }
+  .contact-container-fixedInfo {
+    top: 120% !important;
+    height: 18rem !important;
+  }
+  .contact-container-fixedInfo .contact-contactInfo h2 {
+    margin: 0 !important;
+  }
+  .contact-container-fixedInfo ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-container-fixedInfo ul li a {
+    margin-right: 1rem;
+    font-size: 3rem !important;
+  }
+  .contact-container-fixedInfo ul li a span {
+    display: none;
+  }
 }
 
 .footer {
