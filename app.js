@@ -22,6 +22,7 @@ const preLoading = () => {
     fadeInHome();
     navbar.classList.add("nav-active");
 
+    //hen navbar fade down remove transition delay of navbar
     navbar.addEventListener("transitionend", () => {
       navbar.style.transitionDelay = "0s";
     });
