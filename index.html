@@ -318,31 +318,36 @@
             ></a>
           </div>
         </div>
-        <form class="contact-container-form">
+        <form
+          class="contact-container-form"
+          data-netlify="true"
+          name="contact"
+          method="POST"
+        >
           <h2>Gửi Tin Nhắn</h2>
           <div class="contact-container-form-box">
             <div class="contact-form-inputbox w50">
-              <input type="text" required />
+              <input type="text" required name="first-name" />
               <span>Tên</span>
             </div>
 
             <div class="contact-form-inputbox w50">
-              <input type="text" required />
+              <input type="text" required name="last-name" />
               <span>Họ</span>
             </div>
 
             <div class="contact-form-inputbox w50">
-              <input type="text" required />
+              <input type="email" required name="email" />
               <span>Địa chỉ email</span>
             </div>
 
             <div class="contact-form-inputbox w50">
-              <input type="text" required />
+              <input type="tel" required name="tel" />
               <span>Số Điện Thoại</span>
             </div>
 
             <div class="contact-form-inputbox w100">
-              <textarea name="" required></textarea>
+              <textarea name="message" required></textarea>
               <span>Viết tin nhắn bạn muốn gửi ở đây...</span>
             </div>
             <div class="contact-form-inputbox w100">
