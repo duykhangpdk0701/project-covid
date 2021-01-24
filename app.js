@@ -3,12 +3,12 @@ const fadeInHome = () => {
   const bigText1 = document.querySelector(".big-text-line-1");
   const bigText2 = document.querySelector(".big-text-line-2");
   const description = document.querySelector(
-    ".home .container-page .text-container .description"
+    ".home .container-page .text-container .description",
   );
   const homeSvg = document.querySelector(".svg-home");
   const arr = [bigText1, bigText2, description];
   homeSvg.classList.add("svg-fade-in");
-  for (let item of arr) {
+  for (const item of arr) {
     item.style.transitionDelay = `${(delay += 0.2)}s`;
     item.classList.add("text-fade-in");
   }
@@ -140,7 +140,7 @@ const renderCovidCountryFirstTime = (data) => {
     if (item.Country === "Viet Nam") {
       iconFlag.setAttribute(
         "src",
-        `https://www.countryflags.io/${item.CountryCode.toLowerCase()}/flat/64.png`
+        `https://www.countryflags.io/${item.CountryCode.toLowerCase()}/flat/64.png`,
       );
       countryName.textContent = "Việt Nam";
       countryCases.textContent = item.TotalConfirmed.toLocaleString();
@@ -187,8 +187,8 @@ const renderCovidTable = (data) => {
   });
 };
 
-const getData = () => {
-  fetch("https://api.covid19api.com/summary")
+const getData = async () => {
+  await fetch("https://api.covid19api.com/summary")
     .then((res) => res.json())
     .then((data) => {
       formatDataGlobal(data.Global);
