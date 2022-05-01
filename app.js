@@ -140,8 +140,9 @@ const renderCovidCountryFirstTime = (data) => {
     if (item.Country === "Viet Nam") {
       iconFlag.setAttribute(
         "src",
-        `https://www.countryflags.io/${item.CountryCode.toLowerCase()}/flat/64.png`,
+        `https://flagcdn.com/${item.CountryCode.toLowerCase()}.svg`,
       );
+      iconFlag.setAttribute("width", 30);
       countryName.textContent = "Việt Nam";
       countryCases.textContent = item.TotalConfirmed.toLocaleString();
       countryDead.textContent = item.TotalDeaths.toLocaleString();
@@ -174,12 +175,14 @@ const renderCovidTable = (data) => {
   formatDataCountries(data);
 
   data.forEach((item, index) => {
+    item.CountryCode;
     cardLine.innerHTML += `
     <tr>
       <td>${index + 1}</td>
-      <td><img class="flag-icon" src="https://www.countryflags.io/${
-        item.CountryCode
-      }/flat/64.png">${item.Country}</td>
+      <td><img class="flag-icon" src="https://flagcdn.com/${item.CountryCode.toLowerCase()}.svg"
+      width="30"
+      height="20"
+      >${item.Country}</td>
       <td>${item.TotalConfirmed}</td>
       <td>${item.TotalDeaths}</td>
       <td>${item.TotalRecovered}</td>
